@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>registro</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pavanam&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="body-registro">
+	
+<header>
+	
+  <nav> <img class="menu-hamburgesa" src="img/icons/bars.svg"> </nav>
+  <a  href="index.html"> <img class="logo-inicio" src="img/logo_ultu.png"/></a>
+	
+  <nav class="menu-btn">
+       <ul>
+      <li> <a href="index.html">Nosotros</a> </li>
+      <li> <a href="animales_perdidos.html">Animales perdidos</a> </li>
+      <li> <a href="registro.html" class="btn-ingresar">Ingresar</a> </li>
+    </ul>
+  </nav>
+</header>
+	
+<main class="main-registro">
+  <section class="registro">
+    
+	  <form method="post" action="mailto:ultu@gmail.com?subject='Formulario de registro'" target="_blank" enctype="text/plain">
+      <div class="datos-icono"> <img src="img/icons/user.svg" class="icono-registro">
+        <h2 class="datos-p">Datos Personales</h2>
+      </div>
+      
+		  <h4 class="registro-txt">Registro</h4>
+		  
+      <div class="formulario">
+        <label for="Nombre">Tu nombre</label>
+        <input class="input-registro" type="text" name="Nombre" id="Nombre" placeholder="Nombre y apellido" required>
+        <label for="Mail">E-mail</label>
+        <input class="input-registro" type="email" name="Mail" id="Mail" placeholder="ejemplo@mail.com" required>
+        <label for="Nacimiento">Fecha de Nacimiento</label>
+        <input class="input-registro" type="date" name="Nacimiento" id="Nacimiento" placeholder="DD/MM/AA">
+        <label for="Telefono">Telefono</label>
+        <input class="input-registro" type="tel" maxlength="12" name="Telefono" id="Telefono" placeholder="+54 11" required>
+        <label for="Contraseña">Contraseña</label>
+        <p class="aclaracion">*La contraseña debe tener al menos una mayusculas y un numero</p>
+        <input class="input-registro" type="password" minlength="8" name="Contraseña" id="Contraseña" placeholder="Contraseña123" required>
+        <input class="btn-formulario" type="submit">
+      </div>
+    </form>
+  </section>
+	
+  <aside class="agregar-m">
+    <form class="formulario-agregar-m">
+      <div class="iconos-mascotas"> <img src="img/icons/dog.svg" class="icono-perro"> <img src="img/icons/cat.svg" class="icono-gato"> </div>
+      <section class="formulario-m">
+        
+		  <h2 class="titulo-agregar-m">¿Tenes mascota?</h2>
+        
+		  <p class="bajada-agregar-m"> Podes llevar un registro de su cuidado
+          y en caso de que se pierda subir 
+          de forma instantanea un aviso de busqueda</p>
+		  
+      </section>
+		
+	  <section class="agregar-m-inputs">
+      <label for="Nombre">Su nombre</label>
+      <input class="input-registro2" type="text" name="NombreMascota" id="NombreMascota" placeholder="Nombre de la mascota" required>
+      <label for="Nacimiento">Fecha de Nacimiento</label>
+      <input class="input-registro2" type="date" name="NacimientoMascota" id="NacimientoMascota" placeholder="DD/MM/AA">
+      <p>Sexo:</p>
+      <div class="container">
+        <ul class="radio-btn">
+          <li class="genero-m">
+            <input type="radio" id="f-option" name="selector">
+            <label for="f-option">Macho</label>
+            <div class="check"></div>
+          </li>
+          <li class="genero-m">
+            <input type="radio" id="s-option" name="selector">
+            <label for="s-option">Hembra</label>
+            <div class="check">
+              <div class="inside"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <input class="btn-formulario2" type="submit">
+    </form>
+		</section>
+  </aside>
+  
+  <!-- <img src="img/photo-1563460716037-460a3ad24ba9.png" class="img-registro"> --> 
+  
+</main>
+<footer>
+  <ul class="logos-footer">
+    <li> <a href="facebook.com"> <img class="logos-redes" src="img/redes/facebook.png"> </a> </li>
+    <li> <a  href="instagram.com"> <img class="logos-redes" src="img/redes/ig.png"> </a> </li>
+    <li> <a  href="youtube.com"> <img class="logos-redes" src="img/redes/youtube.png"> </a> </li>
+    <li> <a  href="tiktok.com"> <img class="logos-redes" src="img/redes/tiktok.png"> </a> </li>
+  </ul>
+</footer>
+</body>
+</html>
